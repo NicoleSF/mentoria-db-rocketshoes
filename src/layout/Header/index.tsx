@@ -9,9 +9,9 @@ export const Header = () => {
         <img src={RocketImg} alt="Imagem do logo da rocketshoes" />
       </div>
       <div className={styles.shoppingCart}>
-        <div>
-          <p className={styles.paragraph}>Meu carrinho</p>
-          <p className={styles.paragraph}>3 itens</p>
+        <div className={styles.paragraphContainer}>
+          <p>Meu carrinho</p>
+          <p>3 itens</p>
         </div>
         <div>
           <ShoppingCart sx={{ color: "white" }} />
