@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { ShoppingCart } from "../pages/ShoppingCart";
+import "../global.scss";
 
 export const Routers = () => {
   return (

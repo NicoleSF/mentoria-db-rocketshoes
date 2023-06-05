@@ -1,0 +1,15 @@
+.headerContainer, .shoppingCart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.paragraph{
+    margin: 0;
+    padding-right: 0.5rem;
+    text-align: right;
+    color: white;
+}
+
+
