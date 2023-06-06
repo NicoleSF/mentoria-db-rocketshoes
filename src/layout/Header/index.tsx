@@ -14,7 +14,7 @@ export const Header = () => {
           <p>3 itens</p>
         </div>
         <div>
-          <ShoppingCart sx={{ color: "white" }} />
+          <ShoppingCart sx={{ color: "white" }} fontSize="large" />
         </div>
       </div>
     </header>
