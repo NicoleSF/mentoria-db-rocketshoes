@@ -4,37 +4,37 @@
           "id": 1,
           "description": "Tênis de Caminhada Leve Confortável",
           "price": 179.90,
-          "image": "./src/assets/tenis1.svg"
+          "image": "img1"
       },
       {
           "id": 2,
           "description": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
           "price": 179.90,
-          "image": "./src/assets/tenis2.svg"
+          "image": "img2"
       },
       {
           "id": 3,
           "description": "Tênis Adidas Duramo Lite 2.0",
           "price": 179.90,
-          "image": "./src/assets/tenis3.svg"
+          "image": "img3"
       },
       {
           "id": 4,
           "description": "Tênis de Caminhada Leve Confortável",
           "price": 179.90,
-          "image": "./src/assets/tenis1.svg"
+          "image": "img1"
       },
       {
           "id": 5,
           "description": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
           "price": 179.90,
-          "image": "./src/assets/tenis2.svg"
+          "image": "img2"
       },
       {
-          "id": 3,
+          "id": 6,
           "description": "Tênis Adidas Duramo Lite 2.0",
           "price": 179.90,
-          "image": "./src/assets/tenis3.svg"
+          "image": "img3"
       }
   ]
 }

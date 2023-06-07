@@ -1,10 +1,20 @@
+import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
-export const Shoes = () => {
+type ShoesProps = {
+  id: number;
+  description: string;
+  price: number;
+  image: string;
+};
+
+export const Shoes = ({ id, description, price, image }: ShoesProps) => {
   return (
-    <div className={styles.shoesContainer}>
-      <h1>tenis</h1>
-      <h2>tenis</h2>
-    </div>
+    <>
+      <div key={id} className={styles.shoesContainer}>
+        <p>{description}</p>
+        <p>{price}</p>
+      </div>
+    </>
   );
 };
