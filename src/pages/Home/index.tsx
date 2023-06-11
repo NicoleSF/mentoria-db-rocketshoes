@@ -1,14 +1,8 @@
-import { useEffect, useState } from "react";
-import { Shoes } from "../../features/products/components/Shoes";
+import { useContext, useEffect, useState } from "react";
+import { Shoes, ShoesProps } from "../../features/products/components/Shoes";
 import { Header } from "../../layout/Header";
 import styles from "./styles.module.scss";
-
-type ShoesProps = {
-  id: number;
-  description: string;
-  price: number;
-  image: string;
-};
+import { CartContext } from "../../context/CartContex";
 
 export const Home = () => {
   const [shoes, setShoes] = useState([]);
@@ -20,7 +14,6 @@ export const Home = () => {
       })
       .then((data) => {
         setShoes(data);
-        console.log(data);
       });
   };
 
@@ -28,9 +21,9 @@ export const Home = () => {
     fetchShoesData();
   }, []);
   return (
-    <div>
+    <div className={styles.containerHome}>
       <Header />
-      <div className={styles.container}>
+      <div className={styles.containerShoes}>
         {shoes.map((shoe: ShoesProps) => (
           <Shoes
             key={shoe.id}

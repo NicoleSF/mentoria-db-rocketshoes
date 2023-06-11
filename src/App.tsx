@@ -1,10 +1,13 @@
+import { CartContextProvider } from "./context/CartContex";
 import { Routers } from "./routes";
 
 function App() {
   return (
-    <div>
-      <Routers />
-    </div>
+    <CartContextProvider>
+      <div>
+        <Routers />
+      </div>
+    </CartContextProvider>
   );
 }
 
