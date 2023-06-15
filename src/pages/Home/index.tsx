@@ -3,6 +3,7 @@ import { Shoes, ShoesProps } from "../../features/products/components/Shoes";
 import { Header } from "../../layout/Header";
 import styles from "./styles.module.scss";
 import { CartContext } from "../../context/CartContex";
+import { Link } from "@mui/material";
 
 export const Home = () => {
   const [shoes, setShoes] = useState([]);
@@ -23,6 +24,7 @@ export const Home = () => {
   return (
     <div className={styles.containerHome}>
       <Header />
+      <Link href="/login">Login</Link>
       <div className={styles.containerShoes}>
         {shoes.map((shoe: ShoesProps) => (
           <Shoes
