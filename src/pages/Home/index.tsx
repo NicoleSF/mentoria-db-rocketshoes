@@ -22,7 +22,6 @@ export const Home = () => {
   }, []);
   return (
     <div className={styles.containerHome}>
-      <Header />
       <div className={styles.containerShoes}>
         {shoes.map((shoe: ShoesProps) => (
           <Shoes

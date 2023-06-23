@@ -4,9 +4,7 @@ import { Routers } from "./routes";
 function App() {
   return (
     <CartContextProvider>
-      <div>
-        <Routers />
-      </div>
+      <Routers />
     </CartContextProvider>
   );
 }

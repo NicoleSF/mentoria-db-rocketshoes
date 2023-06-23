@@ -14,6 +14,7 @@ export const ShoppingCart = () => {
 
   return (
     <>
+    <div className={styles.containerShoppingCart}>
       <h1 className={styles.h1Color}>Tenis adicionados</h1>
       <ul>
         {cart.map((products) => (
@@ -23,6 +24,7 @@ export const ShoppingCart = () => {
           </li>
         ))}
       </ul>
+    </div>
     </>
   );
 };
