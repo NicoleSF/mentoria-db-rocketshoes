@@ -1,16 +1,16 @@
-.headerContainer, .shoppingCart{
+.headerContainer,
+.shoppingCart {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
-.paragraphContainer > p{
+.paragraphContainer>p {
     margin: 0;
     padding-right: 0.5rem;
     text-align: right;
     color: white;
 }
-
-

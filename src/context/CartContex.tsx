@@ -6,6 +6,7 @@ type CartContextData = {
   cart: Cart[];
   setCart: React.Dispatch<React.SetStateAction<Cart[]>>;
   handleAdd: (product: Product) => void;
+  handleRemoveItem: (product: Product) => void;
 };
 
 type CartContextProviderProps = {
@@ -29,10 +30,6 @@ export const CartContextProvider: React.FC<CartContextProviderProps> = ({
     console.log(cart);
   }, [cart])
 
-
-  //adicionar produtos no carrinho - ok
-  //quando adicionar o produto, a quantidade do carrinho muda
-  //os produtos não podem se repetir nos itens do carrinho
 
   function handleAdd(newProduct: Product): void {
     const productExist = cart.filter((item) => {
@@ -61,8 +58,28 @@ export const CartContextProvider: React.FC<CartContextProviderProps> = ({
     }
   }
 
+  function handleRemoveItem(itemRemove: Product){
+    const productExist = cart.filter((item) => {
+      return item.id === itemRemove.id
+    })
+    if(productExist.length !== 0){
+      const removeProduct = cart.map((item) => {
+        if(item.id === itemRemove.id && item.quantity > 1){
+          return {
+            ...item,
+            quantity: item.quantity - 1
+          };
+        } else {
+
+          return item;
+        }
+      })
+      setCart(removeProduct)
+    }
+  }
+
   return (
-    <CartContext.Provider value={{ cart, setCart, handleAdd }}>
+    <CartContext.Provider value={{ cart, setCart, handleAdd, handleRemoveItem }}>
       {children}
     </CartContext.Provider>
   );

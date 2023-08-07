@@ -1,9 +1,115 @@
-.containerShoppingCart {
-    background-color: white;
-    height: 100%;
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.liColor,
-.h1Color {
+.containerShoppingCart {
+    width: 100%;
+    max-width: 940px;
+    background-color: white;
+}
+
+.headerTable {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    color: #999;
+    font-size: 16px;
+}
+
+.textHeader {
+    width: 91px;
+}
+
+.textProductHeader {
+    flex: 1;
+    margin-left: 162px;
+}
+
+.spacer {
+    width: 64px;
+}
+
+.liCartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: black;
+    list-style: none;
+    flex: 1;
+    padding: 0 30px;
+
+}
+
+.imgCarrinho {
+    width: 100px;
+    margin-right: 30px;
+}
+
+.textProduct {
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+}
+
+.textPrice {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textQuantity {
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    width: 51px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.buttonChangeQuantity {
+    border: none;
+    background-color: transparent;
+}
+
+.description {
+    flex: 1;
+}
+
+.remove {
+    margin-left: 30px;
+}
+
+.divEndRequest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.divTextTotalValue {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+
+}
+
+.textTotal {
+    color: #999;
+    font-size: 16px;
+
+}
+
+.textValue {
+    font-size: 30px;
+    font-weight: 700;
 }

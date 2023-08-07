@@ -1,8 +1,34 @@
-.shoesContainer{
+.shoesContainer {
     background-color: white;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
 }
 
-.image{
-    width: 60%;
+.image {
+    width: 100%;
+}
+
+.containerParagraph {
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.paragraphDescription {
+    margin-bottom: 1rem;
+}
+
+.paragraphCart {
+    margin: 0 5px 0 0;
+}
+
+.containerButton {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonCart {
+    background-color: #7159C1;
 }

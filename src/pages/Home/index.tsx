@@ -1,8 +1,9 @@
-import { useContext, useEffect, useState } from "react";
-import { Shoes, ShoesProps } from "../../features/products/components/Shoes";
-import { Header } from "../../layout/Header";
+import { useEffect, useState } from "react";
+import { Shoes} from "../../features/products/components/Shoes";
+
 import styles from "./styles.module.scss";
-import { CartContext } from "../../context/CartContex";
+
+import { Product } from "../../types/Produto";
 
 export const Home = () => {
   const [shoes, setShoes] = useState([]);
@@ -23,7 +24,7 @@ export const Home = () => {
   return (
     <div className={styles.containerHome}>
       <div className={styles.containerShoes}>
-        {shoes.map((shoe: ShoesProps) => (
+        {shoes.map((shoe: Product) => (
           <Shoes
             key={shoe.id}
             id={shoe.id}

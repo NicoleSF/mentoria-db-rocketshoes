@@ -1,40 +1,41 @@
 {
   "shoes": [
-      {
-          "id": 1,
-          "description": "Tênis de Caminhada Leve Confortável",
-          "price": 179.90,
-          "image": "img1"
-      },
-      {
-          "id": 2,
-          "description": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-          "price": 179.90,
-          "image": "img2"
-      },
-      {
-          "id": 3,
-          "description": "Tênis Adidas Duramo Lite 2.0",
-          "price": 179.90,
-          "image": "img3"
-      },
-      {
-          "id": 4,
-          "description": "Tênis de Caminhada Leve Confortável",
-          "price": 179.90,
-          "image": "img1"
-      },
-      {
-          "id": 5,
-          "description": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-          "price": 179.90,
-          "image": "img2"
-      },
-      {
-          "id": 6,
-          "description": "Tênis Adidas Duramo Lite 2.0",
-          "price": 179.90,
-          "image": "img3"
-      }
-  ]
+    {
+      "id": 1,
+      "description": "Tênis de Caminhada Leve Confortável",
+      "price": 179.9,
+      "image": "https://60398.cdn.simplo7.net/static/60398/sku/masculino-tenis-qix-dbdois-1617305022663.jpg"
+    },
+    {
+      "id": 2,
+      "description": "Tênis Puma Smash V3",
+      "price": 179.9,
+      "image": "https://imgcentauro-a.akamaihd.net/230x230/95141431.jpg"
+    },
+    {
+      "id": 3,
+      "description": "Tênis Nike Revolution 6",
+      "price": 179.9,
+      "image": "https://imgcentauro-a.akamaihd.net/230x230/9789492R.jpg"
+    },
+    {
+      "id": 4,
+      "description": "Tênis Adidas Own The Game",
+      "price": 179.9,
+      "image": "https://imgcentauro-a.akamaihd.net/230x230/96493231.jpg"
+    },
+    {
+      "id": 5,
+      "description": "Tênis Caminhada Confortável",
+      "price": 179.9,
+      "image": "https://imgcentauro-a.akamaihd.net/230x230/970090KR.jpg"
+    },
+    {
+      "id": 6,
+      "description": "Tênis Adidas Duramo Lite 2.0",
+      "price": 179.9,
+      "image": "https://imgcentauro-a.akamaihd.net/230x230/98140451.jpg"
+    }
+  ],
+  "shoppingCart": []
 }
